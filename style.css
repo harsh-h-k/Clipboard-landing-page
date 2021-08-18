@@ -1,0 +1,397 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) 
+
+font-family: 'Bai Jamjuree', sans-serif;
+*/
+
+/* CSS reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* Variable */
+:root{
+    --cyan:hsl(171, 66%, 44%);
+    --blue:hsl(233, 100%, 69%);
+    --dblue:hsl(210, 10%, 33%);
+    --gblue:hsl(201, 11%, 66%);
+
+
+}
+
+/* Utility classes */
+
+h1{
+    font-size: 2em;
+    color:var(--dblue);
+    font-weight: 700;
+    text-align: center;
+}
+h5{
+    font-size: 1.1em;
+    color: var(--gblue);
+    text-align: center;
+    font-weight: 400;
+}
+h2{
+    font-size: 1.6em;
+    color:var(--dblue);
+    font-weight: 700;
+}
+
+nav::before{
+    content: '';
+    background: url('./resources/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#header-container{
+    margin: 5em auto;
+    width: 40%;
+}
+
+.header-logo{
+    display: block;
+    width: 12%;
+    margin: 1em auto;
+}
+
+.container h1, .container h5{
+    margin:0.25em;
+    text-align: center;
+}
+
+.container h5{
+    line-height: 1.5em;
+}
+
+.header-btn{
+    display: flex;
+    margin: 1.5em;
+    justify-content: center;
+}
+
+.header-btn button{
+    width: 20em;
+    height: 2.5em ;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer ;
+}
+
+#ios{
+    border-style: none;
+    background-color:var(--cyan) ;
+    box-shadow: 2px 2px 4px var(--cyan);
+}
+#ios:hover{
+    box-shadow: 2px 2px 12px var(--cyan);
+}
+
+#mac{
+    border-style: none;
+    background-color: var(--blue);
+    box-shadow: 2px 2px 4px var(--blue);
+}
+
+#mac:hover{
+    box-shadow: 2px 2px 12px var(--blue);
+}
+
+/* TRACK SECTION  */
+
+.track-container-1{
+    margin: 2em auto;
+    width: 50%;
+}
+
+.track-container-1 h1,.track-container-1 h5{
+    text-align: center;
+
+}
+
+.track-container-1 h5{
+    margin: 1em auto;
+    width: 80%;
+    line-height: 2em;
+}
+
+.track-contents{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+   
+}
+
+
+
+.track-img img{
+    object-fit: contain;
+    height: 400px;
+    margin: 2em 2em 2em 0em;
+    
+}
+
+.track-text{
+    margin: 2em;
+}
+
+.track-text-1{
+    padding: 1em;
+}
+
+.track-text-1 h5,.track-text-1 h2{
+    text-align: left;
+}
+
+
+/* ACCESS SECTION  */
+
+
+#access h5{
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+}
+.access-img img{
+    width: 75%;
+    display: block;
+    margin: 3em auto;
+}
+
+/* WORK SECTION  */
+#work-content{
+    display: flex;
+}
+
+
+#work{
+    margin: 2em auto;
+}
+
+#work h5{
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+}
+.work-content-box{
+    margin: 1em;
+    padding: 1em;
+}
+
+.work-img{
+    height: 100px;
+}
+.work-content-box img{
+    width: 20%;
+display: block;
+margin: 1em auto;
+}
+
+.work-content-box h2, .work-content-box h5{
+    text-align: center;
+}
+
+.work-content-box h2{
+    margin: 1em;
+}
+
+.work-content-box h5{
+    line-height: 1.5em;
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+}
+
+/* LOGO SECTION  */
+
+#logos{
+    padding: 2em 5em;
+display: flex;
+justify-content: space-evenly;
+}
+
+#logos img{
+    align-self: center;
+    height: 80%;
+    width: 10%;
+}
+
+/* CLIPBOARD SECTION  */
+
+#clipboard{
+    padding: 2em 5em;
+}
+
+#clipboard h5{
+    width: 50%;
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+
+
+.header-btn button{
+    margin: 2em;
+}
+
+/* FOOTER  */
+
+footer{
+    padding: 2em;
+    background-color: #f5f6f8;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-logo{
+    align-self: center;
+}
+
+.footer-logo img{
+    width: 50%;
+}
+
+.footer-text p{
+    cursor: pointer;
+    color: var(--dblue);
+    font-weight: 700;
+    margin: 1.5em;
+
+}
+
+.footer-text p:hover{
+    color: var(--cyan);
+}
+
+.footer-icons{
+    align-self: center;
+}
+
+.footer-icons img{
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+@media (max-width:800px){
+
+    #header-container{
+        width: 80%;
+        margin: 10em auto;
+    }
+
+
+
+    .track-contents{
+        flex-direction: column;
+    }
+
+    h1 , h2, h5, h6{
+        text-align: center;
+    }
+
+    .track-container-1{
+        width: 80%;
+    }
+
+    .track-text-1 h5, .track-text-1 h2{
+        text-align: center;
+    }
+   .track-img{
+       margin: 1em auto;
+       width: 100%;
+   } 
+
+   .track-img img{
+       width: 100%;
+   }
+
+   #work-content{
+       flex-direction: column;
+   }
+
+   #logos{
+       width: 50%;
+       flex-direction: column;
+       padding: 2em 1em;
+       margin: 1em auto;
+   }
+
+   #logos img{
+       margin: 2em;
+       align-self: center;
+       width: 80%;
+       height: 25%;
+   }
+#clipboard h5{
+    width: 80%;
+}
+
+   footer{
+       flex-direction: column;
+   }
+
+   .footer-text p{
+    text-align: center;
+   }
+
+   .footer-logo{
+       text-align: center;
+   }
+   .header-btn{
+       flex-direction: column;
+   }
+
+   .header-btn button{
+       display: block;
+       margin: 1em auto;
+       width: 100%;
+   }
+}
+
